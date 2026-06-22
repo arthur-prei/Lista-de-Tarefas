@@ -1,4 +1,5 @@
 # Lista de Tarefas
+https://arthur-prei.github.io/Lista-de-Tarefas/
 
 ### Descrição
 Projeto web para gerenciamento de tarefas desenvolvido com HTML, JavaScript e Tailwind CSS
