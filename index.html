@@ -37,7 +37,7 @@
     
     <main class="flex-1 p-1 min-h-0 grid lg:grid-cols-2 gap-1">
         <section class="flex flex-col p-2 bg-yellow-50 border-4 rounded-sm border-yellow-800 overflow-hidden">
-            <div class="flex gap-1 h-15">
+            <div class="flex flex-wrap justify-center gap-1 h-15">
                 <input id="task" class="text-2xl flex-1 pl-1 text-black bg-yellow-100 rounded-lg border border-yellow-300" type="text" placeholder="adicione uma tarefa aqui">
 
                 <!-- prioridade da tarefa -->
@@ -47,19 +47,20 @@
                         <span class="text-yellow-400">✦✦média</span>
                         <span class="text-red-400">✦✦✦alta</span>
                     </p>
-                    <select name="priority" class="text-white flex-1 text-2xl bg-yellow-600 rounded">
+                    <select name="priority" class="text-white text-2xl bg-yellow-600 rounded">
                         <option value="✦">✦baixa</option>
                         <option value="✦✦">✦✦média</option>
                         <option value="✦✦✦">✦✦✦alta</option>
                     </select>
                 </div>
 
-                <button type="button" id="add-task" class="w-30 text-white text-lg bg-yellow-600 hover:bg-yellow-700 rounded cursor-pointer"><i class="fa-solid fa-feather"></i> adicionar</button>
+                <button type="button" id="add-task" class="w-30 text-white flex-1 text-lg bg-yellow-600 hover:bg-yellow-700 rounded cursor-pointer"><i class="fa-solid fa-feather"></i> adicionar</button>
             </div>
-            <p class="text-yellow-700 text-end block xl:hidden">
+            <p class="mt-2 text-yellow-700 text-center block xl:hidden">
+                prioridade
                 <span class="text-blue-300">✦baixa</span>
                 <span class="text-yellow-400">✦✦média</span>
-                <span class="text-red-400">✦✦✦alta</span> ←prioridade
+                <span class="text-red-400">✦✦✦alta</span>
             </p>
             
             <h2 class="sm:text-2xl text-xl mt-2 text-yellow-950 text-center bg-yellow-200 rounded-lg">Tarefas pendentes <span id="to-do" class="bg-yellow-500 text-white px-2 m-1 rounded-xl">0</span></h2>
